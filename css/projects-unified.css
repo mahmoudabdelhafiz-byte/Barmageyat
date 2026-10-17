@@ -1,0 +1,118 @@
+/* Barmageyat Projects brand system — unified heroes v3 (2026-10-17). */
+:root{--bp-hero-start:#071c3d;--bp-hero-mid:#0a2d60;--bp-hero-end:#124a80;--bp-accent:#18a4bd;--bp-accent-dark:#087c99;--bp-text:#102c4c;--bp-muted:#566b83;--bp-surface:#f3f7fc;--bp-border:#d9e5f1}
+/* Apply exactly the same background on every first product/portfolio feature hero, including site-builder pages. */
+body.bp-project :is(.bp-unified-hero,.analytics-hero,.ciq-hero,.aiq-hero,body.bp-project.yardsyncs-page .hero){
+ background:linear-gradient(125deg,var(--bp-hero-start) 0%,var(--bp-hero-mid) 58%,var(--bp-hero-end) 100%)!important;
+ background-color:var(--bp-hero-start)!important;color:#fff!important;
+}
+body.bp-project .bp-unified-hero{min-height:340px;padding-top:54px!important;padding-bottom:54px!important}
+body.bp-project :is(.analytics-hero,.ciq-hero,.aiq-hero,body.bp-project.yardsyncs-page .hero){padding-top:68px!important;padding-bottom:68px!important}
+body.bp-project .bp-unified-hero :is(h1,h2,h3,p,strong,span),
+body.bp-project :is(.analytics-hero,.ciq-hero,.aiq-hero,body.bp-project.yardsyncs-page .hero) :is(h1,h2,h3){color:#fff!important}
+body.bp-project .bp-unified-hero .ed-element.ed-headline :is(h1,h2,h3),
+body.bp-project :is(.analytics-hero,.ciq-hero,.aiq-hero,body.bp-project.yardsyncs-page .hero) h1{
+ font-family:Poppins,Roboto,Arial,sans-serif!important;
+ font-size:clamp(32px,4vw,54px)!important;line-height:1.15!important;letter-spacing:-.025em!important;
+ font-weight:700!important;text-shadow:none!important}
+body.bp-project .bp-unified-hero .ed-element.ed-paragraph,
+body.bp-project .bp-unified-hero .ed-element.ed-paragraph p{color:#e5f0fa!important}
+body.bp-project :is(.analytics-hero,.ciq-hero,.aiq-hero,body.bp-project.yardsyncs-page .hero) p{color:#e5f0fa!important}
+body.bp-project :is(.analytics-hero,.ciq-hero,.aiq-hero,body.bp-project.yardsyncs-page .hero) :is(.aiq-eyebrow,.ciq-eyebrow,.analytics-eyebrow,.eyebrow,.aiq-kicker,.ciq-kicker,.analytics-kicker){color:#7fe1ef!important}
+/* Generic builder first-screen text and controls: preserve imagery and brand artwork. */
+body.bp-project .bp-unified-hero .ed-container{background-color:transparent!important}
+body.bp-project .bp-unified-hero :is(a.button,a.btn,.ed-button a){background:var(--bp-accent)!important;color:#fff!important;border-color:var(--bp-accent)!important;border-radius:8px!important}
+/* Shared call to action color, page sections and card treatment */
+body.bp-project :is(.aiq-btn-primary,.ciq-btn-primary,.analytics-btn-primary,.seo-btn-primary,.yardsyncs-page .cta:not(.ghost)){
+ background:var(--bp-accent)!important;border-color:var(--bp-accent)!important;color:#fff!important;border-radius:8px!important}
+body.bp-project :is(.aiq-btn-primary,.ciq-btn-primary,.analytics-btn-primary,.seo-btn-primary,.yardsyncs-page .cta:not(.ghost)):hover{background:var(--bp-accent-dark)!important}
+body.bp-project :is(.seo-section.soft,.aiq-section.soft,.ciq-section.soft,.analytics-section.soft,.yardsyncs-page .soft){background:var(--bp-surface)!important}
+body.bp-project :is(.seo-card,.aiq-card,.ciq-card,.analytics-card,.yardsyncs-page .card){border-color:var(--bp-border)!important;border-radius:14px!important}
+body.bp-project :is(.seo-rich,.aiq-page,.attendance-page,.cctv-page,.analytics-page,.yardsyncs-page){font-family:Poppins,Roboto,Arial,sans-serif}
+/* Some hero templates default to dark text because they originally used light backgrounds. */
+body.bp-project :is(.ciq-hero,.aiq-hero,.analytics-hero) :is(p,li,small,.ciq-lead,.aiq-lead,.analytics-lead){color:#e5f0fa!important}
+body.bp-project :is(.ciq-hero,.aiq-hero,.analytics-hero) :is(.ciq-eyebrow,.aiq-eyebrow,.analytics-eyebrow){color:#7fe1ef!important}
+@media(max-width:767px){body.bp-project .bp-unified-hero{min-height:0;padding:36px 0!important}body.bp-project :is(.analytics-hero,.ciq-hero,.aiq-hero,body.bp-project.yardsyncs-page .hero){padding-top:44px!important;padding-bottom:44px!important}}
+
+body.bp-project.yardsyncs-page .hero{background:linear-gradient(125deg,#071c3d 0%,#0a2d60 58%,#124a80 100%)!important;color:#fff!important;padding:68px 0!important}
+body.bp-project.yardsyncs-page .hero h1{color:#fff!important;font-size:clamp(32px,4vw,54px)!important}
+body.bp-project.yardsyncs-page .hero p{color:#e5f0fa!important}
+body.bp-project.yardsyncs-page .hero .eyebrow{color:#7fe1ef!important}
+
+/* VISUAL QA correction v4: consistent contrast, typography and spacing in all heroes. */
+body.bp-project .bp-unified-hero,
+body.bp-project .aiq-hero,
+body.bp-project .ciq-hero,
+body.bp-project .analytics-hero,
+body.bp-project.yardsyncs-page .hero{
+ background:#081d3d!important;background-image:linear-gradient(120deg,#071b38 0%,#092c58 68%,#103e70 100%)!important;
+ color:#ffffff!important;
+}
+/* Nested spans have their own product-specific colors: explicitly override them. */
+body.bp-project .aiq-hero h1,body.bp-project .aiq-hero h1 span,
+body.bp-project .ciq-hero h1,body.bp-project .ciq-hero h1 span,
+body.bp-project .analytics-hero h1,body.bp-project .analytics-hero h1 span,
+body.bp-project.yardsyncs-page .hero h1,body.bp-project.yardsyncs-page .hero h1 span,
+body.bp-project .bp-unified-hero h1,body.bp-project .bp-unified-hero h1 span,
+body.bp-project .bp-unified-hero h2,body.bp-project .bp-unified-hero h2 span{
+ color:#ffffff!important;-webkit-text-fill-color:#ffffff!important;
+ font-family:Poppins,Roboto,Arial,sans-serif!important;
+ font-size:clamp(32px,3.2vw,48px)!important;font-weight:700!important;
+ line-height:1.17!important;letter-spacing:-.025em!important;
+ text-shadow:none!important;
+}
+body.bp-project .aiq-hero .aiq-lead,
+body.bp-project .ciq-hero .ciq-lead,
+body.bp-project .analytics-hero p,
+body.bp-project.yardsyncs-page .hero p,
+body.bp-project .bp-unified-hero .ed-paragraph p,
+body.bp-project .bp-unified-hero .ed-paragraph span{
+ color:#e5f0fa!important;-webkit-text-fill-color:#e5f0fa!important;
+ font-size:clamp(16px,1.35vw,19px)!important;line-height:1.68!important;
+ font-weight:400!important;
+}
+/* Product labels are readable and consistent, while badges themselves retain light surfaces. */
+body.bp-project :is(.aiq-hero,.ciq-hero,.analytics-hero) :is(.aiq-kicker,.ciq-kicker,.analytics-kicker,.aiq-eyebrow,.ciq-eyebrow,.analytics-eyebrow){color:#7ee1ee!important}
+body.bp-project .aiq-hero .aiq-badge,body.bp-project .ciq-hero .ciq-badge{color:#092b52!important;background:#fff!important}
+/* Keep hero content vertically aligned and leave breathing space around artwork. */
+body.bp-project :is(.aiq-hero,.ciq-hero,.analytics-hero){padding-block:76px!important}
+body.bp-project .bp-unified-hero{padding-block:74px!important}
+body.bp-project.yardsyncs-page .hero{padding-block:76px!important}
+body.bp-project :is(.aiq-hero,.ciq-hero,.analytics-hero) :is(.aiq-visual,.ciq-visual,.analytics-visual){align-self:center}
+/* Preserve primary vs outline intent but give consistent accent on links/buttons. */
+body.bp-project :is(.aiq-hero,.ciq-hero,.analytics-hero) :is(.aiq-btn-primary,.ciq-btn-primary,.analytics-btn-primary),
+body.bp-project.yardsyncs-page .hero .cta:not(.ghost){background:#119bab!important;color:#fff!important;border-color:#119bab!important}
+@media(max-width:767px){
+ body.bp-project :is(.aiq-hero,.ciq-hero,.analytics-hero),body.bp-project.yardsyncs-page .hero,body.bp-project .bp-unified-hero{padding-block:42px!important}
+ body.bp-project :is(.aiq-hero,.ciq-hero,.analytics-hero) h1,body.bp-project :is(.aiq-hero,.ciq-hero,.analytics-hero) h1 span,body.bp-project.yardsyncs-page .hero h1,body.bp-project .bp-unified-hero h1{font-size:clamp(29px,8vw,39px)!important}
+}
+
+/* FINAL BLUE REFERENCE (CardIQ) — applied uniformly to all portfolio hero shells */
+body.bp-project .bp-unified-hero,
+body.bp-project .analytics-hero,
+body.bp-project .ciq-hero,
+body.bp-project .aiq-hero,
+body.bp-project #yardsyncs-page .hero {
+  background:#071b3b!important;
+  background-image:none!important;
+  background-color:#071b3b!important;
+  color:#fff!important;
+}
+body.bp-project .bp-unified-hero :is(h1,h2,h3),
+body.bp-project .bp-unified-hero :is(h1,h2,h3) span,
+body.bp-project :is(.analytics-hero,.ciq-hero,.aiq-hero) h1,
+body.bp-project :is(.analytics-hero,.ciq-hero,.aiq-hero) h1 span,
+body.bp-project #yardsyncs-page .hero h1,
+body.bp-project #yardsyncs-page .hero h1 span {
+  color:#fff!important;-webkit-text-fill-color:#fff!important;
+  font-family:Poppins,Roboto,Arial,sans-serif!important;
+  font-size:clamp(30px,3.1vw,46px)!important;
+  font-weight:700!important;line-height:1.22!important;
+}
+body.bp-project .bp-unified-hero :is(.ed-paragraph p,.ed-paragraph span),
+body.bp-project :is(.analytics-hero,.ciq-hero,.aiq-hero) :is(.aiq-lead,.ciq-lead,.analytics-lead),
+body.bp-project #yardsyncs-page .hero p {
+ color:#eef4fc!important;-webkit-text-fill-color:#eef4fc!important;
+}
+body.bp-project #yardsyncs-page .ys-hero-grid {align-items:center!important;}
+body.bp-project #yardsyncs-page .ys-hero-visual img {display:block;width:100%;height:auto;object-fit:contain;}
+@media(max-width:767px){body.bp-project #yardsyncs-page .ys-hero-grid{grid-template-columns:1fr!important;}}
