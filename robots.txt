@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://barmageyat.net/sitemap.xml

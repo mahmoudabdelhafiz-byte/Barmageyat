@@ -1,0 +1,33 @@
+RewriteEngine On
+
+# Product URL migration: Smart Gates -> CCTV-IQ
+RewriteRule ^smart-gates(?:/index\.html)?/?$ https://barmageyat.net/cctv-iq/ [R=301,L,NE]
+
+# Retired template/demo pages: permanently removed.
+RewriteRule ^subpage/?$ - [G,L]
+RewriteRule ^modules-1-item(?:/.*)?$ - [G,L]
+
+# Canonicalize directory URLs in one hop: HTTPS + non-WWW + trailing slash.
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_URI} !/$
+RewriteRule ^(.+)$ https://barmageyat.net/$1/ [R=301,L,NE]
+
+# Canonicalize scheme and host for all remaining requests.
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} ^www\.barmageyat\.net$ [NC]
+RewriteRule ^ https://barmageyat.net%{REQUEST_URI} [R=301,L,NE]
+# SEO/performance: compress text assets and cache static media
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript application/json application/xml image/svg+xml
+</IfModule>
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType text/css "access plus 30 days"
+  ExpiresByType application/javascript "access plus 30 days"
+</IfModule>
+
