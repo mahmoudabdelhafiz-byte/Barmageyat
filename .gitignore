@@ -1,0 +1,32 @@
+# Private accounting and customer records
+Cash_Management/
+**/uploads/
+**/error_log
+*.sql
+*.sqlite
+*.db
+*.bak
+*.backup
+*.dump
+
+# Server configuration and secrets
+.env
+.env.*
+!.env.example
+**/config.php
+**/secrets.*
+.htpasswd
+.cpanel/
+.cagefs/
+public_html/
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Build and local state
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+*.zip
