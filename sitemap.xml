@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://barmageyat.net/</loc><lastmod>2026-09-28</lastmod></url>
-  <url><loc>https://barmageyat.net/solutions/</loc><lastmod>2026-09-28</lastmod></url>
-  <url><loc>https://barmageyat.net/projects/</loc><lastmod>2026-09-28</lastmod></url>
-  <url><loc>https://barmageyat.net/manpower-iq/</loc><lastmod>2026-09-28</lastmod></url>
-  <url><loc>https://barmageyat.net/attendance-iq/</loc><lastmod>2026-09-28</lastmod></url>
-  <url><loc>https://barmageyat.net/cardiq/</loc><lastmod>2026-09-28</lastmod></url>
-  <url><loc>https://barmageyat.net/cctv-iq/</loc><lastmod>2026-09-28</lastmod></url>
-  <url><loc>https://barmageyat.net/our-founding-values/</loc><lastmod>2026-09-28</lastmod></url>
-  <url><loc>https://barmageyat.net/get-in-touch/</loc><lastmod>2026-09-28</lastmod></url>
-  <url><loc>https://barmageyat.net/privacy/</loc><lastmod>2026-09-28</lastmod></url>
-  <url><loc>https://barmageyat.net/legal-notice/</loc><lastmod>2026-09-28</lastmod></url>
-  <url>
-    <loc>https://barmageyat.net/ai-data-analytics/</loc>
-  </url>
+  <url><loc>https://barmageyat.net/</loc></url>
+  <url><loc>https://barmageyat.net/solutions/</loc></url>
+  <url><loc>https://barmageyat.net/projects/</loc></url>
+  <url><loc>https://barmageyat.net/yardsyncs/</loc></url>
+  <url><loc>https://barmageyat.net/manpower-iq/</loc></url>
+  <url><loc>https://barmageyat.net/attendance-iq/</loc></url>
+  <url><loc>https://barmageyat.net/cardiq/</loc></url>
+  <url><loc>https://barmageyat.net/cctv-iq/</loc></url>
+  <url><loc>https://barmageyat.net/ai-data-analytics/</loc></url>
+  <url><loc>https://barmageyat.net/our-founding-values/</loc></url>
+  <url><loc>https://barmageyat.net/get-in-touch/</loc></url>
+  <url><loc>https://barmageyat.net/privacy/</loc></url>
+  <url><loc>https://barmageyat.net/legal-notice/</loc></url>
 </urlset>
